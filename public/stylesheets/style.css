@@ -2,11 +2,6 @@ body {
     background: black;
 }
 
-.home {
-    background: rgb(17, 16, 16);
-    padding-bottom: 15px;
-}
-
 .routes {
     margin-top:120px;
 }
@@ -16,12 +11,16 @@ body {
 }
 
 .navbar {
-    background: #363435 !important;    
+    background: #363435 !important;
+    /* opacity: 0.6; */
     border-radius: 0;
 }
 
 .navbar-nav {
     margin-top: 60px !important;
+}
+
+.headBg {
 }
 
 .navbar-nav>li>a {
@@ -79,11 +78,30 @@ li.dropdown:hover > .dropdown-menu {
     transition: 2s;
 }
 
+.home {
+    background: rgb(17, 16, 16);
+    padding-bottom: 15px;
+}
 
 .projects {
     padding: 15px;
     margin-top:200px;
     background: rgb(17, 16, 16);
+}
+
+.about {
+    padding: 15px;
+    padding-right: 0;
+    margin-top:270px;
+    color:white;
+    opacity: 0.7;
+    background: rgb(17, 16, 16);
+    display: table;
+    clear: both;
+}
+
+.aboutText {
+    padding-top: 5px;
 }
 
 .contact {
@@ -95,6 +113,16 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .btn {
-    background: hsl(16, 100%, 50%, 0.5) !important;
+    background: hsl(16, 100%, 50%, 0.4) !important;
     border:none;
+    height: 2rem;
+    width: 5.5rem;
+    font-size: 0.78rem;
+}
+
+.btn:active, .btn:focus {
+    border:none !important;
+    outline: none !important;
+    transition: 0.3s;
+    -webkit-transform: scale(1.1);
 }
