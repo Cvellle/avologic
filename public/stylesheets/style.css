@@ -44,6 +44,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 150px;
+    filter: brightness(0.9);
 }
 
 .logoLink {
@@ -58,6 +59,12 @@ body {
 
 .thumbnail img {
     max-height: 150px;
+}
+
+.card{
+    background: rgb(24, 24, 24);
+    color:rgb(145, 143, 143);
+    margin-bottom:10px;
 }
 
 .thumbnail .description {
@@ -125,4 +132,8 @@ li.dropdown:hover > .dropdown-menu {
     outline: none !important;
     transition: 0.3s;
     -webkit-transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border: 2px solid rgb(172, 113, 3) !important;
 }
