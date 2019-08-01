@@ -26,4 +26,15 @@ router.get('/contact', function(req, res, next) {
 });
 
 
+router.get('/partners', function(req, res, next) {
+  res.render('partners');
+});
+
+router.get('/company', function(req, res, next) {
+  res.render('company');
+});
+
+
+
+
 module.exports = router;

@@ -3,7 +3,8 @@ body {
 }
 
 .routes {
-    margin-top:120px;
+    display: block;
+    margin-top:150px;
 }
 
 .backg {
@@ -11,16 +12,38 @@ body {
 }
 
 .navbar {
-    background: #363435 !important;
-    /* opacity: 0.6; */
+    background: rgba(54, 52, 53, 0.5) !important;
+    height:150px;
     border-radius: 0;
+    border-bottom: 2px solid rgba(255, 117, 25, 0.9);
+    transition: 1.5s;
+}
+
+.logoLink {
+    position: absolute;
+    top:25px;
+    height:100px;
+    margin-left:15px;
+    padding: 0;
+    filter:brightness(0.95);
+}
+
+.logoImg {
+    height:inherit;
 }
 
 .navbar-nav {
-    margin-top: 60px !important;
+    position: absolute;
+    bottom:-2px;
+    right:250px;
 }
 
 .headBg {
+
+}
+.dropdown-menu {
+    background: rgb(230, 227, 227);
+    margin-top:0px;
 }
 
 .navbar-nav>li>a {
@@ -33,28 +56,53 @@ body {
 
 .navbar-nav>li>a:hover {
     transition: 0.1s;
-    background: #363435 !important; 
+    background: transparent !important; 
     opacity: 1;
 }
 
+.linkLine {
+    width:100%;
+    height:2px;
+    background: white;
+}
+
+.linkLineIn {
+    width:0%;
+    height:2px;
+    background: white;
+}
+
+.linkLine1 {
+    width:100%;
+    height:2px;
+    background: rgb(116, 38, 3);
+}
+
+.linkLine2 {
+    width:100%;
+    height:2px;
+    background: rgb(160, 57, 9);
+}
+
+.linkLine3 {
+    width:100%;
+    height:2px;
+    background: rgb(194, 72, 15);
+}
+
+.linkLine4 {
+    width:100%;
+    height:2px;
+    background: rgb(231, 91, 27);
+}
+
 .carousel, .carousel-inner img {
-    /* /* width: 500px; */
     height: 300px;
     margin-top: 20px;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 150px;
     filter: brightness(0.9);
-}
-
-.logoLink {
-    height:100px;
-    padding: 0;
-    padding: 0;
-}
-
-.logoImg {
-    height:inherit;
 }
 
 .thumbnail img {
@@ -119,6 +167,22 @@ li.dropdown:hover > .dropdown-menu {
     background: rgb(17, 16, 16);
 }
 
+.partners {
+    padding-top:100px;
+    color:white;
+    opacity: 0.7;
+}
+
+.company {
+    padding-top:100px;    
+    color:white;
+    opacity: 0.7;
+}
+
+
+
+
+
 .btn {
     background: hsl(16, 100%, 50%, 0.4) !important;
     border:none;
@@ -137,3 +201,36 @@ li.dropdown:hover > .dropdown-menu {
 .navbar-toggler {
     border: 2px solid rgb(172, 113, 3) !important;
 }
+
+.footer {
+    margin-top:100px;
+    padding:50px;
+    background: rgb(20, 18, 18);
+    color:hsl(22, 100%, 33%);
+}
+
+.a {
+    position: absolute;
+    font-size:130px;
+    top:25%;
+    left:-35%;
+    color:rgb(133, 38, 0);
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes example {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes example {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
