@@ -1,1 +1,6 @@
-# Bootstrap-Shop
+# 
+download
+
+npm install
+
+npm start
