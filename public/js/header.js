@@ -31,8 +31,11 @@ $(document).on("mouseleave",".nav-link",function(e){
 $(window).scroll(function(){
   if ($(this).scrollTop() > 50) {
      $('.navbar').css('height','50px');
-    //  $('.navbar').css('border','none');
+     $('.navbar').css('transiotion','2s');
+     $('.navbar').css('background','transparent');
+     $('.navbar').css('border-bottom','3px solid rgba(255, 117, 25, 0.3)');
   } else {
      $('.navbar').css('height','150px');
+     $('.navbar').css('border-bottom','3px solid rgba(255, 117, 25, 0.6)');
   }
 });
