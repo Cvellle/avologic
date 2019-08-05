@@ -8,10 +8,19 @@
         border:none;
     }
 
+    .navbar {
+        height:80px !important;
+        border: none !important;
+    }
+
     .navbar-nav {
         position: relative !important;
-        -webkit-transform: translateY(150px);
+        -webkit-transform: translateY(0px);
         left:0px;
+    }
+
+    .navbar-collapse {
+        -webkit-transform: translateY(145px);
     }
 
     .avAnimDiv {
@@ -102,7 +111,7 @@ body {
 .navbar-nav {
     position: absolute;
     bottom:-2px;
-    right:250px;
+    right:238px;
 }
 
 .headBg {

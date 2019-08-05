@@ -48,10 +48,8 @@ if (media.matches) {
        $('.navbar').css('height','80px');
        $('.navbar').css('transiotion','2s');
        $('.navbar').css('background','transparent');
-       $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.1)');
     } else {
-       $('.navbar').css('height','150px');
-       $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.6)');
+       $('.navbar').css('height','80px');
     }
   });
   
