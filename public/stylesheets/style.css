@@ -10,7 +10,7 @@
 
     .navbar-nav {
         position: relative !important;
-        -webkit-transform: translateY(150px);
+        -webkit-transform: translateY(0px);
         left:0px;
     }
 
