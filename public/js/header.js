@@ -33,9 +33,26 @@ $(window).scroll(function(){
      $('.navbar').css('height','50px');
      $('.navbar').css('transiotion','2s');
      $('.navbar').css('background','transparent');
-     $('.navbar').css('border-bottom','3px solid rgba(255, 117, 25, 0.3)');
+     $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.1)');
   } else {
      $('.navbar').css('height','150px');
-     $('.navbar').css('border-bottom','3px solid rgba(255, 117, 25, 0.6)');
+     $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.6)');
   }
 });
+
+var media = window.matchMedia("(max-width: 905px)");
+
+if (media.matches) {
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('.navbar').css('height','80px');
+       $('.navbar').css('transiotion','2s');
+       $('.navbar').css('background','transparent');
+       $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.1)');
+    } else {
+       $('.navbar').css('height','150px');
+       $('.navbar').css('border-bottom','2px solid rgba(128, 128, 128, 0.6)');
+    }
+  });
+  
+  }
