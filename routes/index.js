@@ -27,11 +27,11 @@ router.get('/contact', function(req, res, next) {
 
 
 router.get('/partners', function(req, res, next) {
-  res.render('partners');
+  res.render('sub/partners');
 });
 
 router.get('/company', function(req, res, next) {
-  res.render('company');
+  res.render('sub/company');
 });
 
 

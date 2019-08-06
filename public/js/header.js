@@ -44,13 +44,24 @@ var media = window.matchMedia("(max-width: 905px)");
 
 if (media.matches) {
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-       $('.navbar').css('height','80px');
-       $('.navbar').css('transiotion','2s');
-       $('.navbar').css('background','transparent');
-    } else {
-       $('.navbar').css('height','80px');
-    }
-  });
-  
+      if ($(this).scrollTop() > 50) {
+         $('.navbar').css('height','80px');
+         $('.navbar').css('transiotion','2s');
+         $('.navbar').css('background','transparent');
+      } else {
+         $('.navbar').css('height','80px');
+      }
+   }); 
   }
+
+  $('.count').each(function () {
+   $(this).prop('Counter',0).animate({
+       Counter: $(this).text()
+   }, {
+       duration: 4000,
+       easing: 'swing',
+       step: function (now) {
+           $(this).text(Math.ceil(now));
+       }
+   });
+});

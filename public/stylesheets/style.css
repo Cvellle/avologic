@@ -34,6 +34,24 @@
         font-size:45px !important;
     }
 
+    h1 {
+        position:absolute;
+        top:0% !important;
+        left:5% !important;
+        font-size: 400% !important;
+        color:white;
+        opacity: 0.2;
+        -webkit-transform: rotate(0deg) !important;
+    }
+
+    .dotted {
+        height:97% !important;
+    }
+
+    .descr1 {
+        min-width:100%;
+    }
+
     .carousel {
         margin-top: 0px !important;
         padding-top: 150px;
@@ -48,6 +66,13 @@
         bottom: 150px !important;
     }
 
+    .map {
+        margin-top:100px;
+        border:none;
+        height: 400px;
+        width: 100%;
+    }
+
 }
 
 body {
@@ -55,6 +80,54 @@ body {
     font-family: "Dejavu Sans";
     font-weight: 500;
     /* font-family: "Trebuchet MS sans"; */
+}
+
+h1 {
+    position:absolute;
+    top:12%;
+    left:-5%;
+    font-size: 500%;
+    color:white;
+    opacity: 0.2;
+    -webkit-transform: rotate(90deg);
+    margin-left:0px;
+    z-index: 5;
+}
+
+h2 {
+    /* font-size: 500%; */
+    color:white;
+    opacity: 0.8;
+}
+
+.descrDiv {
+    margin-top:100px;
+    margin-bottom:100px;
+    height:400px;
+    background: rgba(27, 27, 27, 0);
+    -webkit-filter: grayscale(100%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.descrDiv::after {
+    content: "";
+    background: url("https://iphonewalls.net/wp-content/uploads/2014/09/Electronic%20Circuit%20Green%20Black%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  
+
+.descr1 {
+    /* font-size: 500%; */
+    color:white;
+    opacity: 0.9;
 }
 
 .routes {
@@ -68,6 +141,7 @@ body {
     position: relative;
     opacity: 0.7;
     z-index:1;
+    width:100%;
 }
 
 .dotted {
@@ -111,7 +185,7 @@ body {
 .navbar-nav {
     position: absolute;
     bottom:-2px;
-    right:238px;
+    right:20%;
 }
 
 .headBg {
@@ -119,24 +193,24 @@ body {
 }
 .dropdown-menu {
     font-size: 0.9rem;
-    background: rgb(230, 227, 227);
+    background: rgb(145, 144, 144);
     margin-top:0px;
 }
 
 .dropdown-item:hover {
-    background:rgba(248, 167, 15, 0.7);
+    background:rgba(180, 104, 42, 0.808);
 }
 
 .navbar-nav>li>a {
     font-size: 0.95rem;
     font-family: Arial Narrow, sans-serif;
     color:orange !important;
-    opacity: 0.9;
-    transition: 0.1s;
+    opacity: 0.85;
+    transition: 0.4s;
 }
 
 .navbar-nav>li>a:hover {
-    transition: 0.1s;
+    transition: 0.4s;
     background: transparent !important; 
     opacity: 1;
 }
@@ -178,7 +252,7 @@ body {
 }
 
 .carousel {
-    margin-top:150px;
+    margin-top:60px;
 }
 
 .carousel, .carousel-inner img {
@@ -189,8 +263,46 @@ body {
     filter: brightness(0.9);
 }
 
-.thumbnail img {
-    max-height: 150px;
+.statsDiv {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.homeStats {
+    height:300px;
+    width:50%;
+    font-size: 20px;
+    font-family: "Roboto Mono", "sans-serif";
+    opacity: 0.8;
+    transition: 0.3s;
+    color:rgba(255, 255, 255, 0.6);
+    border-left: 10px solid rgba(255, 166, 0, 0.24);
+}
+
+.homeStats:hover {
+    opacity: 0.95;
+    transition: 0.3s;
+}
+
+.homeStats1 {
+    background:rgba(49, 47, 43, 0.5);
+}
+
+.homeStats2 {
+    background:rgb(80, 69, 63,  0.95);
+}
+
+.homeStats3 {
+    background:rgb(128, 59, 19,  0.95);
+}
+
+.homeStats4 {
+    background:rgb(214, 93, 23,  0.95);
+}
+
+.homeStats span {
+    font-size: 70px;
+    font-weight: 500;
 }
 
 .card{
@@ -198,6 +310,16 @@ body {
     color:rgb(145, 143, 143);
     margin-bottom:10px;
 }
+
+.card-img {
+    transition: 0.2s;
+}
+
+.card-img:hover {
+    /* transition: 0.3s; */
+    -webkit-transform:scale(1.05);
+}
+
 
 .caption {
     color: #7f7f7f;
@@ -246,7 +368,6 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .contact {
-    padding: 15px;
     margin-top:150px;
     color:white;
     opacity: 0.8;
@@ -267,6 +388,7 @@ li.dropdown:hover > .dropdown-menu {
 
 .map {
     margin-top:100px;
+    border:none;
     height: 200px;
     width: 100%;
 }
