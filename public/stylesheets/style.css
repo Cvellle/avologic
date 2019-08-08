@@ -2,9 +2,17 @@
 
     .navbar-toggler {
         position: absolute;
-        top:20px;
+        /* top:20px; */
         right:20px;
-        background: rgba(255, 165, 0,0.5);
+        background: rgba(255, 165, 0, 0.5);
+        border:none;
+    }
+
+    .navbar-toggler:active {
+        position: absolute;
+        /* top:20px; */
+        right:20px;
+        background: rgba(255, 165, 0, 0.5);
         border:none;
     }
 
@@ -23,6 +31,23 @@
         -webkit-transform: translateY(145px);
     }
 
+    .backg {
+        margin-top:150px;
+    }
+    
+    /* .avAnimDiv {
+        position: relative;
+        top:-20px;
+        left:-20px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .a {
+        width: 10px;
+        width: 10px;
+    }
+     */
     .avAnimDiv {
         margin-top:0px !important;
         margin-left:-15px;
@@ -69,7 +94,7 @@
     .map {
         margin-top:100px;
         border:none;
-        height: 400px;
+        height: 400px !important;
         width: 100%;
     }
 
@@ -77,14 +102,14 @@
 
 body {
     background: black;
-    font-family: "Dejavu Sans";
+    font-family: "Dejavu", "sans-serif";
     font-weight: 500;
     /* font-family: "Trebuchet MS sans"; */
 }
 
 h1 {
     position:absolute;
-    top:12%;
+    top:60vh;
     left:-5%;
     font-size: 500%;
     color:white;
@@ -101,6 +126,17 @@ h2 {
 }
 
 .descrDiv {
+    margin-top:0px;
+    margin-bottom:0px;
+    height:200px;
+    background: rgba(27, 27, 27, 0);
+    -webkit-filter: grayscale(100%);
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+}
+
+.fields {
     margin-top:100px;
     margin-bottom:100px;
     height:400px;
@@ -108,10 +144,9 @@ h2 {
     -webkit-filter: grayscale(100%);
     padding-top: 70px;
     padding-bottom: 70px;
-
 }
 
-.descrDiv::after {
+.fields::after {
     content: "";
     background: url("https://iphonewalls.net/wp-content/uploads/2014/09/Electronic%20Circuit%20Green%20Black%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
     opacity: 0.15;
@@ -139,6 +174,7 @@ h2 {
 
 .backg {
     position: relative;
+    margin-top:-150px;
     opacity: 0.7;
     z-index:1;
     width:100%;
@@ -159,14 +195,14 @@ h2 {
 }
 
 .navbar {
-    background: rgba(54, 52, 53, 0.5) !important;
-    background: black !important;
+    background: rgba(0, 0, 0, 0.705);
     height:150px;
     border-radius: 0;
     /* border-bottom: 2px solid rgba(255, 117, 25, 0.4); */
     border-bottom: 2px solid rgba(128, 128, 128, 0.6);
     transition: 1.2s;
     box-shadow: 120px 80px 40px 20px #0ff;
+    /* opacity: 0.7; */
 }
 
 .logoLink {
@@ -272,12 +308,17 @@ h2 {
     height:300px;
     width:50%;
     font-size: 20px;
-    font-family: "Roboto Mono", "sans-serif";
+    font-family: "Dejavu", "sans-serif";
     opacity: 0.8;
+    transition: all .5s;
     transition: 0.3s;
     color:rgba(255, 255, 255, 0.6);
     border-left: 10px solid rgba(255, 166, 0, 0.24);
 }
+/* .homeStats.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  } */
 
 .homeStats:hover {
     opacity: 0.95;
@@ -424,11 +465,10 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .avAnimDiv {
-    /* display: flex; */
     z-index: 0;
     margin-top:-10px;
-    /* margin-bottom:250px; */
     justify-content: center;
+    opacity: 0.7;
 }
 
 .avAnimDiv2 {
@@ -469,17 +509,17 @@ li.dropdown:hover > .dropdown-menu {
         opacity: 0;
     }    
 
-    10% {
+    20% {
         opacity: 0.6;
     }       
     
 
     50% {
-        opacity: 0.2;
-        transform: scale(3);
+        opacity: 1;
+        transform: scale(2.3);
     }
     55% {
-        transform: scale(3);
+        transform: scale(2.3);
     }
     90% {
         opacity: 1;
@@ -493,9 +533,9 @@ li.dropdown:hover > .dropdown-menu {
 
   }
 
-  .avAnimDiv3 {
+.avAnimDiv3 {
     z-index: 0;
-  }
+}
 
   .log {
     position: relative;
@@ -524,7 +564,7 @@ li.dropdown:hover > .dropdown-menu {
         opacity: 0; 
     }
     25.5% {
-        opacity: 0.8; 
+        opacity: 0.6; 
     }
     26% {
         opacity: 0; 
@@ -541,10 +581,23 @@ li.dropdown:hover > .dropdown-menu {
         opacity: 0;
     }
   }
-  
-  /* @keyframes example {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-  } */
-  
+
+.hideme {
+    -webkit-transform: translate(0,-70px);
+    opacity:0;
+}
+
+.hideme2 {
+    opacity:0;
+}
+
+.appear {
+    transition:1.5s;
+    -webkit-transform: translate(0, 0px);
+    opacity:1;
+}
+
+.appear2 {
+    transition:3s;
+    opacity:1;
+}
