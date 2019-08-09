@@ -9,10 +9,11 @@ $(function(){  // $(document).ready shorthand
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         
         if( bottom_of_window > bottom_of_element ){
-            // $(this).animate({'opacity':'1','margin-bottom':'100px'},1000);
             $(this).addClass("appear");
-            // $('.hideme2',this).addClass("appear2");
-            $(this).next('.hideme2').addClass("appear2");
+            $(this).find('.hideme1').addClass("appear1");
+            $(this).find('.hideme2').addClass("appear2");
+            $(this).find('.hideme3').addClass("appear3");
+            $(this).find('.hideme4').addClass("appear4");
         }
         
     }); 

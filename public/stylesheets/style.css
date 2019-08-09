@@ -90,7 +90,7 @@
     .carousel-indicators {
         bottom: 150px !important;
     }
-
+    
     .map {
         margin-top:100px;
         border:none;
@@ -104,7 +104,20 @@ body {
     background: black;
     font-family: "Dejavu", "sans-serif";
     font-weight: 500;
-    /* font-family: "Trebuchet MS sans"; */
+}
+
+svg {
+    height:100px !important;
+    margin:none;
+    padding: none;
+    transition: 0.5s;
+    opacity: 0.6;
+    filter:blur(1px);
+}
+
+svg:hover {
+    transition: 0.5s;
+    filter:blur(1px) brightness(1.5);
 }
 
 h1 {
@@ -125,73 +138,11 @@ h2 {
     opacity: 0.8;
 }
 
-.descrDiv {
-    margin-top:0px;
-    margin-bottom:0px;
-    height:200px;
-    background: rgba(27, 27, 27, 0);
-    -webkit-filter: grayscale(100%);
-    padding-top: 100px;
-    padding-bottom: 0px;
-
-}
-
-.fields {
-    margin-top:100px;
-    margin-bottom:100px;
-    height:400px;
-    background: rgba(27, 27, 27, 0);
-    -webkit-filter: grayscale(100%);
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.fields::after {
-    content: "";
-    background: url("https://iphonewalls.net/wp-content/uploads/2014/09/Electronic%20Circuit%20Green%20Black%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
-  
-
-.descr1 {
-    /* font-size: 500%; */
-    color:white;
-    opacity: 0.9;
-}
-
 .routes {
     position: relative;
     display: block;
     margin-top:150px;
     min-height:20rem;
-}
-
-.backg {
-    position: relative;
-    margin-top:-150px;
-    opacity: 0.7;
-    z-index:1;
-    width:100%;
-}
-
-.dotted {
-    position: absolute;
-    width:100%;
-    height:99%;
-    background-image: radial-gradient(black 50%, transparent 50%);
-    background-size: 4px 4px;
-    z-index:3;
-}
-
-.video {
-    z-index:2;
-    opacity: 0.7;
 }
 
 .navbar {
@@ -200,9 +151,7 @@ h2 {
     border-radius: 0;
     /* border-bottom: 2px solid rgba(255, 117, 25, 0.4); */
     border-bottom: 2px solid rgba(128, 128, 128, 0.6);
-    transition: 1.2s;
-    box-shadow: 120px 80px 40px 20px #0ff;
-    /* opacity: 0.7; */
+    transition: 1.2s;    /* opacity: 0.7; */
 }
 
 .logoLink {
@@ -227,6 +176,7 @@ h2 {
 .headBg {
 
 }
+
 .dropdown-menu {
     font-size: 0.9rem;
     background: rgb(145, 144, 144);
@@ -287,6 +237,29 @@ h2 {
     background: rgb(231, 91, 27);
 }
 
+
+.backg {
+    position: relative;
+    margin-top:-150px;
+    opacity: 0.7;
+    z-index:1;
+    width:100%;
+}
+
+.dotted {
+    position: absolute;
+    width:100%;
+    height:99%;
+    background-image: radial-gradient(black 50%, transparent 50%);
+    background-size: 4px 4px;
+    z-index:3;
+}
+
+.video {
+    z-index:2;
+    opacity: 0.7;
+}
+
 .carousel {
     margin-top:60px;
 }
@@ -299,8 +272,62 @@ h2 {
     filter: brightness(0.9);
 }
 
+.descrDiv {
+    margin-top:0px;
+    margin-bottom:0px;
+    height:200px;
+    background: rgba(27, 27, 27, 0);
+    -webkit-filter: grayscale(100%);
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.descrDiv>h2 {
+    margin-top:80px;
+    margin-bottom:20px;
+    opacity: 0.9;
+}
+
+.carousel {
+    margin-top:200px;
+}
+
+.descr1 {
+    color:white;
+    opacity: 0.8;
+}
+
+.fields {
+    margin-top:100px;
+    margin-bottom:0px;
+    height:400px;
+    background: rgba(27, 27, 27, 0);
+    -webkit-filter: grayscale(100%);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.fields::after {
+    content: "";
+    background: url("https://iphonewalls.net/wp-content/uploads/2014/09/Electronic%20Circuit%20Green%20Black%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.panfields {
+    /* position: absolute; */
+    top:-300px;
+    height:300px;
+    filter: opacity(0.4);
+}
+
 .statsDiv {
-    margin-top: 200px;
+    margin-top: 0px;
     margin-bottom: 200px;
 }
 
@@ -430,7 +457,7 @@ li.dropdown:hover > .dropdown-menu {
 .map {
     margin-top:100px;
     border:none;
-    height: 200px;
+    height: 35vh;
     width: 100%;
 }
 
@@ -530,8 +557,8 @@ li.dropdown:hover > .dropdown-menu {
         opacity: 0;
         transform: scale(2.3);
     }
-
   }
+  
 
 .avAnimDiv3 {
     z-index: 0;
@@ -584,20 +611,48 @@ li.dropdown:hover > .dropdown-menu {
 
 .hideme {
     -webkit-transform: translate(0,-70px);
+    /* opacity:0; */
+}
+
+.hideme1 {
     opacity:0;
+    -webkit-transform: translate(0,-55px);
 }
 
 .hideme2 {
     opacity:0;
 }
 
-.appear {
+.hideme3 {
+    opacity:0;
+    -webkit-transform: translate(-200px, 0);
+}
+
+.hideme4 {
+    -webkit-transform: translate(200px, 0);
+    opacity:0;
+}
+
+.appear1 {
     transition:1.5s;
     -webkit-transform: translate(0, 0px);
     opacity:1;
 }
 
 .appear2 {
-    transition:3s;
+    transition:5s;
     opacity:1;
 }
+
+.appear3 {
+    transition:1.5s;
+    -webkit-transform: translate(30px, 0px);
+    opacity:1;
+}
+
+.appear4 {
+    transition:1.5s;
+    opacity:1;
+    -webkit-transform: translate(-30px, 0px);
+}
+
