@@ -32,7 +32,7 @@
     }
 
     .backg {
-        margin-top:150px;
+        margin-top:150px !important;
     }
     
     /* .avAnimDiv {
@@ -97,8 +97,8 @@
     }
 
     .fields img {
-        margin-top:80px;
-        height:150px;
+        margin-top:100px !important;
+        height:130px;
     }
 
     .hideme3 {
@@ -110,6 +110,19 @@
         -webkit-transform: translate(0px, 0) !important;
         opacity:0;
         overflow: hidden;
+    }
+
+
+    .homeStats {
+        height:150px !important;
+    }
+
+    .homeStats span {
+        font-size: 2rem !important;
+    }
+    
+    .card {
+        margin-bottom:20px !important;
     }
     
     .map {
@@ -261,7 +274,7 @@ h2 {
 
 .backg {
     position: relative;
-    margin-top:150px;
+    margin-top:-150px;
     opacity: 0.7;
     z-index:1;
     width:100%;
@@ -342,13 +355,42 @@ h2 {
 
 .panfields {
     /* position: absolute; */
-    top:-300px;
     height:300px;
     filter: opacity(0.4);
+    margin-top:-15px !important;
+}
+
+.led {
+    margin-top:-20px !important;
+}
+
+.clients {
+    height:400px;
+    margin-top:65px;
+    color:white;
+    opacity: 0.7;
+}
+
+.clients::after {
+    content: "";
+    background: url("../images/cl.jpg");
+    background-size:100% 100%;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.clients h3 {
+    margin-top:70px;
+    margin-bottom:50px;
 }
 
 .statsDiv {
-    margin-top: 0px;
+    margin-top: -70px;
     margin-bottom: 200px;
 }
 
@@ -394,7 +436,7 @@ h2 {
     font-weight: 500;
 }
 
-.card{
+.card {
     background: rgb(24, 24, 24);
     color:rgb(145, 143, 143);
     margin-bottom:10px;
