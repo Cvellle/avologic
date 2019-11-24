@@ -1,4 +1,4 @@
-@media only screen  and (max-width:1024px) {
+@media only screen  and (max-width:768px) {
 
     .navbar-toggler {
         position: absolute;
@@ -48,7 +48,12 @@
         width: 10px;
     }
      */
+
+    .logoLink {
+        left:0px !important;
+    }
     .avAnimDiv {
+        left:20px !important;
         margin-top:0px !important;
         margin-left:-15px;
         -webkit-transform: scale(0.7);
@@ -130,6 +135,14 @@
 
 }
 
+
+
+
+
+
+
+
+
 body {
     background: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -176,14 +189,18 @@ h2 {
 .navbar {
     background: rgba(0, 0, 0, 0.705);
     height:150px;
+    z-index: 5;
     border-radius: 0;
     border-bottom: 2px solid rgba(128, 128, 128, 0.6);
-    transition: 1.2s;   
+    transition: 1s;
+    -moz-transition: -moz-transform 1s, border-bottom 1s;
 }
 
 .logoLink {
-    position: absolute;
+    position: fixed;
+    z-index: 15;
     top:25px;
+    left:200px;
     height:100px;
     margin-left:15px;
     padding: 0;
@@ -201,7 +218,7 @@ h2 {
 .navbar-nav {
     position: absolute;
     bottom:-2px;
-    right:20%;
+    right:15%;
 }
 
 .headBg {
@@ -447,7 +464,7 @@ h2 {
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     opacity: 0.8;
-    transition: all .5s;
+    /* transition: all .5s; */
     transition: 0.3s;
     color:rgba(255, 255, 255, 0.6);
     border-left: 10px solid rgba(255, 166, 0, 0.24);
@@ -793,4 +810,6 @@ li.dropdown:hover > .dropdown-menu {
     border:none !important;
     outline: none !important;
 }
+
+
 

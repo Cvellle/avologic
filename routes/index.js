@@ -37,4 +37,14 @@ router.get('/company', function(req, res, next) {
 
 
 
+router.get('/ser', function(req, res, next) {
+  res.render('home/ser', { title: 'Avologic' });
+});
+
+router.get('/ser/projekti', function(req, res, next) {
+  res.render('ser/projekti');
+});
+
+
+
 module.exports = router;

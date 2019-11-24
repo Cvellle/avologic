@@ -17,7 +17,17 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 // view engine setup
-app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
+app.engine('.hbs', expressHbs({
+  defaultLayout: 'layout',
+  extname: '.hbs',
+  helpers: {
+    section: function(name, options){
+        if(!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this);
+        return null;
+    }
+}
+}));
 app.set('view engine', '.hbs');
 
 // uncomment after placing your favicon in /public
