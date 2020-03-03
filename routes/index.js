@@ -36,6 +36,7 @@ router.get('/company', function(req, res, next) {
 
 
 
+// SER
 
 router.get('/ser', function(req, res, next) {
   res.render('home/ser', { title: 'Avologic' });
@@ -43,6 +44,27 @@ router.get('/ser', function(req, res, next) {
 
 router.get('/ser/projekti', function(req, res, next) {
   res.render('ser/projekti');
+});
+
+router.get('/ser/o-nama', function(req, res, next) {
+  res.render('ser/o-nama');
+});
+
+router.get('/ser/polja', function(req, res, next) {
+  res.render('ser/polja');
+});
+
+router.get('/ser/kompanija', function(req, res, next) {
+  res.render('ser/kompanija');
+});
+
+
+router.get('/ser/partneri', function(req, res, next) {
+  res.render('ser/partneri');
+});
+
+router.get('/ser/ser/kontakt', function(req, res, next) {
+  res.render('/contact');
 });
 
 
