@@ -1,4 +1,4 @@
-@media only screen  and (max-width:768px) {
+@media only screen  and (max-width:991px) {
 
     .navbar-toggler {
         position: absolute;
@@ -133,6 +133,13 @@
         overflow: hidden;
     }
 
+    .fields h3 {
+        font-size:2rem !important;
+    }
+
+    .fields p {
+        font-size: 1.5rem !important;
+    }
 
     .homeStats {
         height:150px !important;
@@ -151,6 +158,10 @@
         border:none;
         height: 400px !important;
         width: 100%;
+    }
+
+    .clients h3 {
+        font-size:2rem !important;
     }
 
     .clients p {
