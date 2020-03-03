@@ -63,8 +63,8 @@ router.get('/ser/partneri', function(req, res, next) {
   res.render('ser/partneri');
 });
 
-router.get('/ser/ser/kontakt', function(req, res, next) {
-  res.render('/contact');
+router.get('/ser/kontakt', function(req, res, next) {
+  res.render('ser/kontakt');
 });
 
 

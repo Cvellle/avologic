@@ -3,7 +3,8 @@
     .navbar-toggler {
         position: absolute;
         /* top:20px; */
-        right:20px;
+        right:15vw;
+        top:12vw;
         background: rgba(255, 165, 0, 0.5);
         border:none;
     }
@@ -62,6 +63,18 @@
     .log{
         margin-left:-15px !important;
         font-size:45px !important;
+    }
+
+    #ser {
+        position: absolute;
+        right:8vw;
+        top:2vw;
+    }
+
+    #eng {
+        position: absolute;
+        right:22vw;
+        top:2vw;
     }
 
     h1 {
