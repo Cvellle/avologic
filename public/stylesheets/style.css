@@ -18,6 +18,7 @@
     }
 
     .navbar {
+        position: relative;
         height:80px !important;
         border: none !important;
     }
@@ -89,6 +90,7 @@
 
     .dotted {
         height:97% !important;
+        background-size: 8px 8px !important;
     }
 
     .descr1 {
