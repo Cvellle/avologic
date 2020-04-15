@@ -4,7 +4,7 @@ var csrf = require('csurf');
 
 var csrfProtection = csrf(); //{ cookie: false }
 router.use(csrfProtection);
-/* GET home page. */
+
 router.get('/', function(req, res, next) {
   res.render('home/index', { title: 'Avologic' });
 });
