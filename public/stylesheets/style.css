@@ -288,7 +288,7 @@ h2 {
     font-family: Arial Narrow, sans-serif;
     color:orange !important;
     opacity: 0.85;
-    transition: 0.4s;
+    transition: 0.4s opacity;
 }
 
 .navbar-nav>li>a:hover {
