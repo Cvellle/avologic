@@ -9,15 +9,6 @@ const logoLink = document.querySelector(".logoLink");
 
 function events() {
   window.addEventListener("scroll", debounce(scrollHeader, 30));
-  // window.addEventListener("resize", function () {
-  //   location.reload();
-  // });
-//   window.addEventListener('devtoolschange', function (e) {
-//     alert("")
-// });
-  // if (window.console && window.console.chrome) {
-  //  alert("")
-  // };
   listItem[2].addEventListener("click", toggleDropdown);
 }
 
