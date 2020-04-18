@@ -3,7 +3,7 @@
     .navbar-toggler {
         position: absolute;
         right:20px;
-        bottom:28px;
+        bottom:45px;
         background: rgba(255, 165, 0, 0.5);
         border:none;
     }
@@ -16,9 +16,19 @@
 
     .navbar {
         position: fixed;
-        height:120px !important;
+        height:125px !important;
         border: none !important;
         display: flex;
+        background: rgba(255, 255, 255, 0.048) !important;
+    }
+
+    .transp {
+        background-color: transparent !important;
+    }
+
+    .smaller {
+        transition:0.15s;
+        transform: scale(0.7) translate(-25px, -25px) !important;
     }
 
     .navbar-nav {
@@ -38,6 +48,7 @@
     .logoLink {
         top:20px !important;
         left:0px !important;
+        transition:0.15s;
     }
     
     .avAnimDiv {
@@ -58,9 +69,9 @@
     #ser {
         position: absolute;
         right:5px;
-        top:5px;
+        top:3px;
         height: 18px;
-        font-size: 8px;
+        font-size: 12px;
         width: 40px;
         margin-right: 0 !important;
     }
@@ -68,10 +79,18 @@
     #eng {
         position: absolute;
         right:43px;
-        top:5px;
+        top:3px;
         height: 18px;
-        font-size: 8px;
+        font-size: 12px;
         width: 40px;
+    }
+
+    #ser, #eng {
+        background:transparent !important;
+        color:rgba(255, 94, 0, 0.719) !important;
+        border:none;
+        border-radius: 0.5vw;
+        transition: 0.3s;
     }
 
     h1 {
@@ -220,7 +239,7 @@ h2 {
     position: fixed;
     z-index: 15;
     top:25px;
-    left:200px;
+    left:130px;
     height:100px;
     margin-left:15px;
     padding: 0;
@@ -255,6 +274,7 @@ h2 {
     font-size: 0.9rem;
     background: rgb(145, 144, 144);
     margin-top:0px;
+    display: none !important;
 }
 
 .dropdown-item:hover {
@@ -330,7 +350,7 @@ h2 {
 
 #ser, #eng {
     background:rgba(82, 82, 82, 0.548);
-    color:rgba(199, 199, 199, 0.76);
+    color:rgba(199, 199, 199, 0.514);
     border:none;
     border-radius: 0.5vw;
     transition: 0.3s;
@@ -589,9 +609,11 @@ h2 {
     color: rgb(85, 85, 85);
 }
 
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-    transition: 2s;
+@media only screen  and (min-width:992px) {
+    li.dropdown:hover > .dropdown-menu {
+        display: block !important;
+        transition: 2s;
+    }
 }
 
 .home {
@@ -854,5 +876,12 @@ li.dropdown:hover > .dropdown-menu {
     outline: none !important;
 }
 
+.borderCh {
+    border-color: rgba(255, 255, 255, 0.055) !important;
+}
+
+.shown {
+    display: list-item !important;
+}
 
 

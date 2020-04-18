@@ -4,9 +4,9 @@ $(function () {
 
 $(window).scroll(function () {
     $('.hideme').each(function (i) {
-        var bottom_of_element = $(this).offset().top + $(window).height() / 5;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        var media = window.matchMedia("(max-width: 905px)");
+        let bottom_of_element = $(this).offset().top + $(window).height() / 5;
+        let bottom_of_window = $(window).scrollTop() + $(window).height();
+        const media = window.matchMedia("(max-width: 905px)");
 
         if (media.matches) {
             if (bottom_of_window > bottom_of_element) {
