@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var csrf = require('csurf');
-
 var csrfProtection = csrf(); //{ cookie: false }
 router.use(csrfProtection);
 
@@ -35,7 +34,6 @@ router.get('/company', function(req, res, next) {
 });
 
 
-
 // SER
 
 router.get('/ser', function(req, res, next) {
@@ -66,7 +64,5 @@ router.get('/ser/partneri', function(req, res, next) {
 router.get('/ser/kontakt', function(req, res, next) {
   res.render('ser/kontakt');
 });
-
-
 
 module.exports = router;
