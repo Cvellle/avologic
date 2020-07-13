@@ -1,5 +1,5 @@
-const ser = document.querySelector("#ser");
-const eng = document.querySelector("#eng");
+const ser = document.querySelector(".ser");
+const eng = document.querySelector(".eng");
 
 ser.onclick = function () {
     if (window.location.pathname == "/") {

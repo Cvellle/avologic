@@ -53,7 +53,7 @@
   .languages {
     display: flex;
   }
-  #ser {
+  .ser {
     position: absolute;
     right: 5px;
     top: 3px;
@@ -62,7 +62,7 @@
     width: 40px;
     margin-right: 0 !important;
   }
-  #eng {
+  .eng {
     position: absolute;
     right: 43px;
     top: 3px;
@@ -70,7 +70,7 @@
     font-size: 12px;
     width: 40px;
   }
-  #ser, #eng {
+  .ser, .eng {
     background: transparent !important;
     color: rgba(255, 94, 0, 0.719) !important;
     border: none;
@@ -156,7 +156,7 @@
     margin-right: 0vw !important;
     padding-right: 0vw !important;
   }
-  .company .container > div > div {
+  .company .container>div>div {
     flex: 1 1 100% !important;
     max-width: 100%;
     padding: 2.5%;
@@ -265,6 +265,7 @@ h2 {
   color: orange !important;
   opacity: 0.85;
   transition: 0.4s opacity;
+  font-weight: 600;
 }
 
 .navbar-nav>li>a:hover {
@@ -323,7 +324,7 @@ h2 {
   align-items: flex-end;
 }
 
-#ser, #eng {
+.ser, .eng {
   background: rgba(82, 82, 82, 0.548);
   color: rgba(199, 199, 199, 0.514);
   border: none;
@@ -342,11 +343,11 @@ h2 {
   outline: none;
 }
 
-#eng {
+.eng {
   margin-right: 2vw;
 }
 
-#ser {
+.ser {
   margin-right: 0.5vw;
 }
 
@@ -412,6 +413,10 @@ h2 {
 
 /* FIELDS */
 
+.fields h3 {
+  font-weight: 700;
+}
+
 .fields {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -441,7 +446,6 @@ h2 {
 }
 
 .panfields {
-  /* position: absolute; */
   height: 300px;
   filter: opacity(0.4);
   margin-top: -15px !important;
@@ -454,7 +458,7 @@ h2 {
 
 .fieldsList {
   font-size: 110%;
-  font-weight: 300 !important;
+  font-weight: 900 !important;
 }
 
 /* LED */
@@ -465,12 +469,17 @@ h2 {
 
 /* CLIENTS */
 
+.clients h3 {
+  font-weight: 700;
+}
+
 .clients {
   height: 400px;
   margin-top: 65px;
   color: white;
   opacity: 0.7;
   font-size: 120%;
+  font-weight: 900;
 }
 
 .clients::after {
@@ -549,12 +558,11 @@ h2 {
 }
 
 .card-img:hover {
-  /* transition: 0.3s; */
   -webkit-transform: scale(1.05);
 }
 
 .caption {
-  color: #7f7f7f;
+  color: #bbbbbb;
   padding: 10px;
 }
 
@@ -583,12 +591,16 @@ h2 {
   background: rgb(17, 16, 16);
 }
 
+.projects h2 {
+  color: rgb(184, 184, 184);
+}
+
 .about {
   padding: 15px;
   padding-right: 0;
   margin-top: 270px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.8;
   background: rgb(17, 16, 16);
   display: table;
   clear: both;
@@ -601,20 +613,20 @@ h2 {
 .contact {
   margin-top: 150px;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   background: rgb(17, 16, 16);
 }
 
 .partners {
   padding-top: 100px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .company {
   padding-top: 100px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .company .container>div {
@@ -646,10 +658,11 @@ h2 {
   transition: 2s;
 }
 
-.company img:hover  {
+.company img:hover {
   transition: 2s all;
   opacity: 1;
 }
+
 .map {
   margin-top: 100px;
   border: none;
@@ -676,7 +689,8 @@ h2 {
   margin-top: 100px;
   padding: 50px;
   background: rgb(20, 18, 18);
-  color: hsl(22, 100%, 33%);
+  color: rgba(247, 132, 0, 0.815);
+  font-weight: 600;
 }
 
 .avAnimDiv {
